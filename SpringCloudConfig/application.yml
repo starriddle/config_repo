@@ -1,2 +1,6 @@
-general-message: config from default profile of config-repo root
-over-message: overridable config from default profile of config-repo root
+message:
+  global: general from global
+  system: default from global
+  profile: profile from global
+  both: both from global
+  custom: custom from global
