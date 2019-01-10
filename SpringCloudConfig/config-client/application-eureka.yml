@@ -1,0 +1,2 @@
+custom-message: config from eureka profile of config-client
+over-message: overridable config from eureka profile of config-client
