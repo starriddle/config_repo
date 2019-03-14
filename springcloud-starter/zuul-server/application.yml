@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    a:
+      service-id: client-A
+      path: /a/**
+    b:
+      service-id: client-B
+      path: /b/**
