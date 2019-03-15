@@ -12,7 +12,7 @@ spring:
           predicates:
             - Path=/a/**
           filters:
-            - RewritePath=/b/,/
+            - RewritePath=/a/,/
         - 
           id: server-b
           uri: lb://client-b
