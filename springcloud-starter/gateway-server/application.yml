@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    discovery:
+      locator:
+        enabled: true
+    gateway:
+      # 自定义路由配置
+      routes:
+        - 
+          id: server-a
+          uri: lb://client-a
+          predicates:
+            - Path=/a/**
+          filters:
+            - RewritePath=/b/,/
+        - 
+          id: server-b
+          uri: lb://client-b
+          predicates:
+            - Path=/b/**
+          filters:
+            - RewritePath=/b/,/
